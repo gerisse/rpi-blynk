@@ -1,4 +1,5 @@
 # rpi-blynk
+
 Docker image that runs the Blynk server on Raspberry Pi.
 Thanks to Hypriot team.
 
@@ -27,6 +28,5 @@ https://IP_of_your_Raspi:9443/admin
 
 with this :
 
-Admin login email : admin@blynk.cc
-Admin password : admin
+Admin login email : admin@blynk.cc  /  Admin password : admin
 
