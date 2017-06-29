@@ -21,3 +21,11 @@ To forward IP ports from the host to the container, do this:
 docker run -d -p 7443:7443 -p 8443:8443 -p 9443:9443 rpi-blynk 
 ```
 
+After few minutes, you can admin your Blynk server : connect you to 
+
+https://<IP of your Raspi>:9443/admin
+
+with this :
+Admin login email : admin@blynk.cc
+Admin password : admin
+
