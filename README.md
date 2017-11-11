@@ -10,7 +10,7 @@ git clone https://github.com/gerisse/rpi-blynk.git
 cd rpi-blynk
 docker build -t rpi-blynk .
 ```
-Easy peasy:
+Launch the container:
 
 ```sh
 docker run rpi-blynk
