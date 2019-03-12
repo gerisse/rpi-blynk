@@ -16,6 +16,10 @@ RUN mkdir -p /data
 RUN mkdir /config && touch /config/server.properties
 VOLUME ["/config", "/data/backup"]
 
+RUN mkdir -p /usr/local/bin
+ADD ./bin /usr/local/bin
+RUN chmod +x /usr/local/bin/*.sh
+
 # IP port listing: # 8443: Application mutual ssl/tls port # 8442: Hardware plain tcp/ip port # 8441: Hardware ssl/tls port (for hardware that supports SSL/TLS sockets) # 8081: Web socket ssl/tls port # 8082: Web sockets plain tcp/ip port # 9443: HTTPS port # 8080: HTTP port # 7443: Administration UI HTTPS port 
 
 EXPOSE 8080 8440 8441 9443 
