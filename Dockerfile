@@ -86,8 +86,8 @@ ADD ./bin /usr/local/bin
 RUN chmod +x /usr/local/bin/*.sh
 
 # IP port listing: # 8443: Application mutual ssl/tls port # 8442: Hardware plain tcp/ip port # 8441: Hardware ssl/tls port (for hardware that supports SSL/TLS sockets) # 8081: Web socket ssl/tls port # 8082: Web sockets plain tcp/ip port # 9443: HTTPS port # 8080: HTTP port # 7443: Administration UI HTTPS port 
+#EXPOSE 8080 8440 8441 9443 
+EXPOSE ${HARDWARE_MQTT_PORT} ${HARDWARE_MQTT_PORT_SSL} ${HTTP_PORT} ${HTTPS_PORT}
 
-EXPOSE 8080 8440 8441 9443 
 WORKDIR /data
-
-ENTRYPOINT ["java", "-jar", "/blynk/server.jar", "-dataFolder", "/data", "-serverConfig", "/config/server.properties"]
+ENTRYPOINT ["/usr/local/bin/run.sh"]
