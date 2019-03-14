@@ -79,7 +79,7 @@ RUN curl -L https://github.com/blynkkk/blynk-server/releases/download/v${BLYNK_S
 RUN mkdir -p /data
 # Create configuration folder. To persist data, map a file to /config/server.properties 
 RUN mkdir /config && touch /config/server.properties
-VOLUME ["/config", "/data/backup"]
+VOLUME ["/config", "/data"]
 
 RUN mkdir -p /usr/local/bin
 ADD ./bin /usr/local/bin
