@@ -48,4 +48,4 @@ EXPOSE 8080 8440 8441 9443
 
 WORKDIR /data
 #ENTRYPOINT ["/usr/local/bin/run.sh"]
-ENTRYPOINT ["java", "-jar", "/blynk/server.jar", "-dataFolder", "/data", "-serverConfig", "/config/server.properties"]
+ENTRYPOINT ["java", "-jar", "/blynk/server.jar", "-dataFolder", "/data", "-serverConfig", "/config/server.properties", "-mailConfig", "/config/mail.properties", "-smsConfig", "/config/sms.properties"]
