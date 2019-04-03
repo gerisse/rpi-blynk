@@ -6,7 +6,7 @@ Thanks to Hypriot team.
 ## How To Use It
 Build:
 ```sh
-git clone https://github.com/gerisse/rpi-blynk.git
+git clone https://github.com/fr8tra1n/rpi-blynk.git
 cd rpi-blynk
 docker build -t rpi-blynk .
 ```
@@ -31,4 +31,4 @@ with this :
 Admin login email : admin@blynk.cc  /  Admin password : admin
 
 
-Docker image : https://hub.docker.com/r/gerisse/rpi-blynk/
+Docker image : https://hub.docker.com/r/fr8tra1n/rpi-blynk/
