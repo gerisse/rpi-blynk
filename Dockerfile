@@ -1,8 +1,6 @@
-FROM hypriot/rpi-java
+FROM bellsoft/liberica-openjdk-debian:12
 
-MAINTAINER Mathias Renner <mathias@hypriot.com>
-
-ENV BLYNK_SERVER_VERSION 0.39.4 
+ENV BLYNK_SERVER_VERSION 0.41.3
 
 RUN apt-get update \
 && apt-get install -y curl 
